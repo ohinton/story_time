@@ -1,6 +1,7 @@
 class ContributionsController < ApplicationController
   def new
     @story = Story.find(params[:story_id])
+    @rand = "#{rand(7)}.jpg"
     @contribution = @story.contributions.new
   end
 
