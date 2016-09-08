@@ -1,16 +1,16 @@
 class ContributionsController < ApplicationController
   def new
-    @story= Story.find(params[:story_id])
+    @story = Story.find(params[:story_id])
     @contribution = @story.contributions.new
   end
 
   def show
-    @story= Story.all
+    @stories = Story.all
     @contributions = Contribution.all
   end
 
   def create
-    @story= Story.find(params[:story_id])
+    @story = Story.find(params[:story_id])
     @contribution = @story.contributions.new(contribution_params)
     if @contribution.save
       redirect_to story_path(@contribution.story)
@@ -20,12 +20,12 @@ class ContributionsController < ApplicationController
   end
 
   def edit
-    @story= Story.find(params[:story_id])
+    @story = Story.find(params[:story_id])
     @contribution = @story.contributions.find(params[:id])
   end
 
   def update
-    @story= Story.find(params[:story_id])
+    @story = Story.find(params[:story_id])
     @contribution = @story.contributions.find(params[:id])
       if @contribution.update(contribution_params)
         redirect_to story_path(@contribution.story)
@@ -35,7 +35,7 @@ class ContributionsController < ApplicationController
     end
 
   def destroy
-    @story= Story.find(params[:story_id])
+    @story = Story.find(params[:story_id])
     @contribution = Contribution.find(params[:id])
     @contribution.destroy
     redirect_to story_path(@contribution.story)

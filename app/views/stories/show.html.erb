@@ -1,5 +1,7 @@
 <h1><%= @story.title %></h1>
 
+<p><%= link_to "Add a contribution", new_story_contribution_path(@story) %></p>
+
 <% if @story.contributions.any? %>
   <h4>Here are the contributions for this story:</h4>
 
