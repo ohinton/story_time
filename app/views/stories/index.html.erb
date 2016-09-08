@@ -1,11 +1,17 @@
-<h1>Stories</h1>
+<h1>Story Time</h1>
 
+<h4>Welcome to Story Time! Start a new story or contribute to one that's already started!</h4>
+
+<%= link_to "Add a new story", new_story_path, :class => "btn btn-success btn-lg" %>
+
+<h2>Contribute to these stories:</h2>
 <ul>
+  <div class="row">
   <% @stories.each do |story| %>
-  <li>
-    <%= link_to story.title, story_path(story) %>
-  </li>
+    <div class="col-sm-4 tile-padding">
+      <%= image_tag "#{rand(16)}.jpg", :class => "img-responsive"%>
+      <%= link_to story.title, story_path(story) %>
+    </div>
   <% end %>
+</div>
 </ul>
-
-<%= link_to "Add a new story", new_story_path %>
