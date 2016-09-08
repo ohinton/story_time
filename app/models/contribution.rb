@@ -4,5 +4,4 @@ class Contribution < ActiveRecord::Base
   validates :sentence, :presence => true
 
   belongs_to :story
-
 end

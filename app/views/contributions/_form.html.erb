@@ -5,8 +5,8 @@
 <%= form_for [@story, @contribution] do |f| %>
   <%= f.hidden_field :image, :value => @rand %>
   <%= f.label :sentence %>
-  <%= f.text_field :sentence, :maxlength => 140%>
+  <%= f.text_field :sentence, :maxlength => 140, :class => "form-control"%>
   <%= f.label :author %>
-  <%= f.text_field :author %>
-  <%= f.submit  %>
+  <%= f.text_field :author, :class => "form-control"%>
+  <%= f.submit :class => "btn btn-success contrib-btn" %>
 <% end %>

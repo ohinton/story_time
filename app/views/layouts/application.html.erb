@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>StoryTime</title>
+    <title>Story Time!</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,6 +11,7 @@
 
   <body>
     <div class="container">
+      <h1 id="header"><%= link_to "Story Time", stories_path%><h1>
       <%= yield %>
     </div>
   </body>
