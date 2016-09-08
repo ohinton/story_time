@@ -10,7 +10,7 @@
     <li>
       <p><%= contribution.author %></p>
       <p><%= contribution.sentence %></p>
-      <p><%= contribution.image %></p>
+      <p><%= image_tag contribution.image %></p>
       <%= link_to "edit contribution", edit_story_contribution_path(@story, contribution) %>
       <%= link_to "delete contribution", story_contribution_path(@story, contribution),
       :data => {:confirm => "Are you sure you want to delete this contribution?",

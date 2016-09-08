@@ -23,6 +23,7 @@ class ContributionsController < ApplicationController
   def edit
     @story = Story.find(params[:story_id])
     @contribution = @story.contributions.find(params[:id])
+    @rand = @contribution.image
   end
 
   def update
