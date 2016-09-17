@@ -1,24 +1,13 @@
-# README
+# Story Time
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By Olivia Hinton & Sam Park | Sept. 8, 2016
 
-Things you may want to cover:
+## Description
+A website where users can collectively write amusing stories one sentence at at time from the inspiration of a single image. 
 
-* Ruby version
 
-* System dependencies
+### License
 
-* Configuration
+*This software is licensed under the MIT license.*
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Copyright (c) 2016 **Olivia Hinton**
